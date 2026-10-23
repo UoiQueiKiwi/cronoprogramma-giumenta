@@ -10,7 +10,7 @@
             const utente = window.netlifyIdentity.getUser();
             if (!utente) {
                 // Se non c'è una sessione attiva, rispedisci l'utente al login
-                window.location.href = "index.html";
+                window.location.href = "app.html";
             }
         });
     })();
@@ -18,7 +18,7 @@
     // Funzione di utilità che puoi richiamare dove vuoi nel tuo codice per fare il logout
     async function eseguiLogout() {
         await window.netlifyIdentity.logout();
-        window.location.href = "index.html";
+        window.location.href = "app.html";
     }
 </script>
 <meta charset="utf-8">
